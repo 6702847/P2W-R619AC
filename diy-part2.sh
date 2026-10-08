@@ -25,7 +25,7 @@ fi
 sed -i 's/[Bb]ootstrap/argon/g' ./feeds/luci/collections/luci/Makefile
 
 # 设置默认路由器 IP 地址。
-sed -i 's/192.168.1.1/192.168.88.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
 # 使用官方 OpenClash，避免第三方 feed 里的版本与当前 LuCI 不兼容。
 find . -name Makefile -path '*openclash*' -delete
